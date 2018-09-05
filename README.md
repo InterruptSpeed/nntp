@@ -38,3 +38,15 @@ Example
 		log.Fatalf("error reading reader: %v", err)
 	}
 ```
+
+Testing
+-------
+```
+go test -coverprofile=coverage.out -v
+go tool cover -func=coverage.out
+go tool cover -html=coverage.out
+
+go test -covermode=count -coverprofile=count.out -v
+go tool cover -func=count.out
+go tool cover -html=count.out
+```

@@ -1,0 +1,5 @@
+# ignore coverage.out file produced by go tool -coverprofile=coverage.out
+coverage.out
+
+# ignore count.out file produced by go test -covermode=count -coverprofile=count.out
+count.out
